@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 function Commit({commits}){
 
     let dates = {};
+    let last_week = [];
     const today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 0, 0, 0, 0);
     const first_date = new Date(commits[commits.length-1]);
     const earliest = first_date.getTime() + first_date.getTimezoneOffset()*60*1000;
@@ -18,10 +19,6 @@ function Commit({commits}){
         var idx = Math.ceil((today.getTime() - now.getTime())/(1000*60*60*24))
         dates[idx]++;
     }
-
-    console.log(new Date(new Date(commits[0]).getTime()))
-    console.log(Math.ceil((new Date(commits[0]).getTime() - today.getTime())/(1000*60*60*24)))
-    console.log(dates)
 
     var flag = false;
     var streak = 0;
@@ -43,6 +40,10 @@ function Commit({commits}){
         }
     }
 
+    for(i=0; i<7; i++){
+        last_week.push(dates[i])
+    }
+
     return (
     
     <div className="commit">
@@ -54,9 +55,9 @@ function Commit({commits}){
         </div>
         <h3>My recent commits</h3>
         <div className="commit__data">
-            {Object.entries(dates).map((item, index)=>{
-                return (<h3 key={index}>{item[1]}</h3>);
-            })}
+            {last_week.map((commit, index)=>(
+                <h3 key={index}>{commit}</h3>
+            ))}
         </div>
     </div>
     );
