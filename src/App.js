@@ -20,7 +20,6 @@ class App extends React.Component{
           </div>
       ) : (
         <div className="commits">
-          <h2>Hi</h2>
           <Commit
             commits={commits}
           />
@@ -45,7 +44,6 @@ class App extends React.Component{
       });
       page = page + 1;
     }while(prelength !== mycommits.length);
-    console.log(mycommits)
 
     this.setState({commits:mycommits, isLoading:false});
   };
