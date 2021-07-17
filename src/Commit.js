@@ -21,12 +21,12 @@ function Commit({commits}){
     }
 
     var flag = false;
-    var streak = 0;
-    var current_streak = 0;
-    var longgest_streak = 0;
+    var streak = 1;
+    var current_streak = 1;
+    var longgest_streak = 1;
     var longgest_day = today;
 
-    for(i=0; i<commits.length; i++){
+    for(i=1; i<commits.length; i++){
         if(dates[i] > 0) streak++;
         else{
             if(!flag){
@@ -71,10 +71,14 @@ function Commit({commits}){
     
     <div className="commit">
         <div className="current_streak">
-            <h2>My current streak : {current_streak}</h2>
+            {dates[0] > 0 ? 
+                <h2>My current streak : {current_streak} ✅</h2> : 
+                <h2>My current streak : {current_streak-1} 🥺</h2>}
         </div>
         <div>
-            <h3 className="border_round">Let's keep up with {current_streak + 1} steak ! 🔥</h3>
+            {dates[0] > 0 ? 
+                <h3 className="border_round">You're done with {current_streak} streak ❗️</h3> : 
+                <h3 className="border_round">Let's keep up with {current_streak} streak 🔥</h3>}
         </div>
         <div className="longgest_streak">
             <h2>My longgest streak : {longgest_streak}</h2>
