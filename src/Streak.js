@@ -16,12 +16,13 @@ function Streak({dates, length}){
                 current_streak = streak;
                 flag = true;
                 longgest_streak = streak;
-                longgest_day = today.getTime() - (streak-1)*24*60*60*1000;
+                longgest_day = today.getTime() - (i-1)*24*60*60*1000;
+                if(dates[0] === 0 && i === 1) longgest_streak = 0;
             }
             else{
                 if(longgest_streak < streak){
                     longgest_streak = streak;
-                    longgest_day = today.getTime() - (streak-1)*24*60*60*1000;
+                    longgest_day = today.getTime() - (i-1)*24*60*60*1000;
                 }
             }
             streak = 0;
@@ -47,10 +48,11 @@ function Streak({dates, length}){
                 <h3 className="border_round">You're done with {current_streak} streak ❗️</h3> : 
                 <h3 className="border_round">Let's keep up with {current_streak} streak 🔥</h3>}
         </div>
-        <div className="longgest_streak">
-            <h2>My longgest streak : {longgest_streak}</h2>
-            <h3 className="date_detail">{longgest_day.toDateString()} - {longgest_day_end.toDateString()}</h3>
-        </div>
+        {longgest_streak === 0 ? null : 
+            <div className="longgest_streak">
+                <h2>My longgest streak : {longgest_streak}</h2>
+                <h3 className="date_detail">{longgest_day.toDateString()} - {longgest_day_end.toDateString()}</h3>
+            </div>}
         </section>
     );
 

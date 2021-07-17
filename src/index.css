@@ -15,6 +15,41 @@ code {
     monospace;
 }
 
+input{
+  width: 10em;
+  height: 2em;
+  text-align: center;
+  font-size: large;
+  border-color: #d2691e;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  color: #616A6B;
+}
+
+button{
+  width: 9em;
+  height: 3em;
+  background-color: white;
+  border-color: chocolate;
+  border-radius: 0.3em;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 2em;
+  color: #555555;
+}
+
+.title{
+  font-size: xx-large;
+  font-weight: 600;
+  margin-top: -3em;
+}
+
+.question{
+  font-size: large;
+  font-weight: 500;
+  color:#555555;
+}
+
 .current_streak{
   color: #B03A2E;
 }

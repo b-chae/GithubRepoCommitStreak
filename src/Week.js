@@ -3,10 +3,12 @@ import React from "react"
 function Week({dates}){
 
     let last_week = [];
-    const last_week_day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const weekofday = new Date().getDay();
+    var last_week_day = []
     for(var i=0; i<=weekofday && i<Object.keys(dates).length; i++){
         last_week.push(dates[i])
+        last_week_day.push(weekday[weekofday-i]);
     }
 
     return(
@@ -22,7 +24,7 @@ function Week({dates}){
         <div className="history">
             {last_week_day.map((day, index)=>(
                 <div key={index} className="box">
-                <h3>{last_week_day[6-index]}</h3>
+                <h3>{day}</h3>
             </div>
             ))}
         </div>

@@ -19,7 +19,7 @@ function Commit({commits}){
     return (
     
     <div className="commit">
-        <Streak dates={commit_day} length={commits.length}/>
+        <Streak dates={commit_day} length={commit_day.length}/>
         <History dates={commit_day}/>
         <Week dates={commit_day}/>
     </div>
