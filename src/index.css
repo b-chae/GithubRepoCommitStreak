@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   position: relative;
+  width: 35em;
 }
 
 code {
@@ -43,10 +44,18 @@ code {
   flex-direction: row-reverse;
 }
 
+.box{
+  margin-top: -0.5em;
+  margin-bottom: -1.5em;
+  margin-left: 1em;
+  color: #616A6B;
+  width: 10%;
+}
+
 .commit_border{
   border: solid;
   border-color: #616A6B;
-  margin-left: 3em;
+  margin-left: 1em;
   border-radius: 1em;
   color: #616A6B;
 }

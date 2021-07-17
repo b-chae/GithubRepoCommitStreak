@@ -5,6 +5,7 @@ function Commit({commits}){
 
     let dates = {};
     let last_week = [];
+    const last_week_day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), 0, 0, 0, 0);
     const first_date = new Date(commits[commits.length-1]);
     const earliest = first_date.getTime() + first_date.getTimezoneOffset()*60*1000;
@@ -24,7 +25,7 @@ function Commit({commits}){
     var streak = 1;
     var current_streak = 1;
     var longgest_streak = 1;
-    var longgest_day = today;
+    var longgest_day;
 
     for(i=1; i<commits.length; i++){
         if(dates[i] > 0) streak++;
@@ -65,7 +66,6 @@ function Commit({commits}){
 
     longgest_day = new Date(longgest_day)
     const longgest_day_end = new Date(longgest_day.getTime() + (longgest_streak-1)*24*60*60*1000);
-    console.log(longgest_day, longgest_day_end)
 
     return (
     
@@ -92,7 +92,16 @@ function Commit({commits}){
         <h3 className="border_round">My recent commits 📝</h3>
         <div className="history">
             {last_week.map((commit, index)=>(
-                <h3 className="commit_border" key={index}>{commit}</h3>
+                <div className="box">
+                    <h3 key={index}>{commit}</h3>
+                </div>
+            ))}
+        </div>
+        <div className="history">
+            {last_week_day.map((day, index)=>(
+                <div className="box">
+                <h3 key={index}>{last_week_day[6-index]}</h3>
+            </div>
             ))}
         </div>
     </div>
