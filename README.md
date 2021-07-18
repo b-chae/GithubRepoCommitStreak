@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+## Github Repo Commit Streak
+> This web site shows how many streaks you have with in your github repository. It also shows a brief summary of your commit history.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 레포별로 연속으로 커밋한 횟수를 보여줌으로써 지속적으로 1일 1커밋을 할 수 있도록 도와주는 웹 사이트 입니다.
 
-## Available Scripts
+#### 1. To get started, please click the linke below
+https://b-chae.github.io/github-repo-commit-streak/
 
-In the project directory, you can run:
+#### 2. Write your github ID and repository name
+<img width="350" alt="Screen Shot 2021-07-18 at 5 27 27 PM" src="https://user-images.githubusercontent.com/54340317/126060843-a82ba90b-b465-4a37-aab8-54e8930d49cc.png">
 
-### `npm start`
+#### 3. Wait for a second, it will show everything you need!
+<img width="310" alt="Screen Shot 2021-07-18 at 5 10 43 PM" src="https://user-images.githubusercontent.com/54340317/126060873-386760fe-96a4-427e-b95b-2c9dd0d27bc4.png"> <img width="330" alt="Screen Shot 2021-07-18 at 5 11 11 PM" src="https://user-images.githubusercontent.com/54340317/126060878-269de88d-56cd-47bb-b7af-e30075b4bf2c.png"> <img width="330" alt="Screen Shot 2021-07-18 at 5 29 08 PM" src="https://user-images.githubusercontent.com/54340317/126060890-f3c46d7b-964e-47ab-b311-fd3a37b8332c.png"><img width="330" alt="Screen Shot 2021-07-18 at 5 30 33 PM" src="https://user-images.githubusercontent.com/54340317/126060923-1cbf2cc6-8221-4ec4-a91c-69b35847913f.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Reference
+- Inspired by [Duolingo](https://www.duolingo.com/), [DenverCoder1/github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
