@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/GithubRepoCommitStreak/static/css/main.0112b3d2.chunk.css",
-    "main.js": "/GithubRepoCommitStreak/static/js/main.cb71bdce.chunk.js",
-    "main.js.map": "/GithubRepoCommitStreak/static/js/main.cb71bdce.chunk.js.map",
+    "main.js": "/GithubRepoCommitStreak/static/js/main.eaee39f3.chunk.js",
+    "main.js.map": "/GithubRepoCommitStreak/static/js/main.eaee39f3.chunk.js.map",
     "runtime-main.js": "/GithubRepoCommitStreak/static/js/runtime-main.d1080096.js",
     "runtime-main.js.map": "/GithubRepoCommitStreak/static/js/runtime-main.d1080096.js.map",
     "static/js/2.45d3ef1c.chunk.js": "/GithubRepoCommitStreak/static/js/2.45d3ef1c.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d1080096.js",
     "static/js/2.45d3ef1c.chunk.js",
     "static/css/main.0112b3d2.chunk.css",
-    "static/js/main.cb71bdce.chunk.js"
+    "static/js/main.eaee39f3.chunk.js"
   ]
 }
