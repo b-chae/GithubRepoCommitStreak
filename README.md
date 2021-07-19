@@ -4,7 +4,7 @@
 > 레포별로 연속으로 커밋한 횟수를 보여줌으로써 지속적으로 1일 1커밋을 할 수 있도록 도와주는 웹 사이트 입니다.
 
 #### 1. To get started, please click the linke below
-https://b-chae.github.io/github-repo-commit-streak/
+https://b-chae.github.io/GithubRepoCommitStreak/
 
 #### 2. Write your github ID and repository name
 <img width="350" alt="Screen Shot 2021-07-18 at 5 27 27 PM" src="https://user-images.githubusercontent.com/54340317/126060843-a82ba90b-b465-4a37-aab8-54e8930d49cc.png">
